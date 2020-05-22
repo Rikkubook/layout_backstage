@@ -79,27 +79,104 @@ current: index
     <div class="col-8">
       <p class="text-right text-muted mb-1 mr-1">2 comments</p>
       <div class="comments ">
-        <div class="comments_header border  rounded-top border-custom-decorate bg-custom-lighter">
+        <div class="comments__header d-flex justify-content-between  align-items-center border  rounded-top border-custom-decorate bg-custom-lighter">
           <div class="p-12px">
             <p class="mb-1">Chapter Assignment 2 / HTML&CSS</p>
-            <h4>Please check this file for me, thanks!</h4>
+            <h4 class="font-weight-bold mb-0">Please check this file for me, thanks!</h4>
           </div>
-          <div class="">
-          </div>
+          <button class="btn btn-outline-none my-2 my-sm-0">
+            <span class="material-icons">
+              more_vert
+              </span>
+          </button>
         </div>
-        <div class="comments_main">
-          <div class="person d-flex p-2 ">
-            <div class="person__img rounded-circle overflow-hidden mr-3">
-              <img src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="">
-            </div>
-            <div class="person__detail flex-grow-1">
-              <h4 class="font-weight-bold">Andy Chen</h4>
-              <p class="text-muted">andy0401@mail.com</p>
-            </div>
-          </div>
+        <div class="comments__main">
+          <ul class=" list-unstyled border border-custom-decorate border-top-0  rounded-bottom">
+            <li class=" p-12px ">
+              <div class="person d-flex">
+                <div class="person__img rounded-circle overflow-hidden mr-3">
+                  <img src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80" alt="">
+                </div>
+                <div class="person__detail flex-grow-1">
+                  <h4 class="font-weight-bold">Emily Wang</h4>
+                  <p class="text-muted mb-3">10:38 AM (4 hours ago)</p>
+                </div>
+              </div>
+              <div class="message pb-3 border-bottom border-custom-decorate">
+                <p>
+                  Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the 
+                  <span class="bg-custom-lighter text-custom px-1">div </span>
+                  is bigger than the height of the 
+                  <span class="bg-custom-lighter text-custom px-1">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?
+                </p>
+                <button class="border border-custom-decorate bg-custom-lighter font-weight-bold p-3 rounded">
+                  <span class="material-icons align-middle">
+                    attach_file
+                    </span>
+                  HW-2-David.zip
+                </button>
+              </div>
+            </li>
+            <li class=" p-12px ">
+              <div class="person d-flex">
+                <div class="person__img rounded-circle overflow-hidden mr-3">
+                  <img src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="">
+                </div>
+                <div class="person__detail flex-grow-1 d-flex  justify-content-between align-items-center ">
+                  <div>
+                    <h4 class="font-weight-bold">Andy Chen</h4>
+                    <p class="text-muted mb-3">13:24 AM (1 hours ago)</p>
+                  </div>
+                  <div>
+                    <button class="btn btn-outline-none">
+                      <span class="material-icons">
+                        star_border
+                        </span>
+                    </button>
+                    <button class="btn btn-outline-none">
+                      <span class="material-icons">
+                        create
+                        </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="message pb-3">
+                <p>
+                  Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. 
+                </p>
+                  <p>
+                  You can:
+                  </p>
+                  <ul class="pl-3 ml-3"  style="list-style-type: disc";>
+                    <li>adjust the <span class="bg-custom-lighter text-custom px-1">vertical-align </span>of the image to position it elsewhere (e.g. the <span class="bg-custom-lighter text-custom px-1">middle</span> ) or</li>
+                    <li>change the<span class="bg-custom-lighter text-custom px-1">display</span> so it isn’t inline.
+                    </li>
+                  </ul>
+
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </div>
-
+<div class="footer container-fluid d-flex justify-content-between align-items-center position-absolute">
+  <div class="flex-grow-1 text-center">
+    <button class="btn btn-outline-none my-2 my-sm-0">
+      <span class="material-icons">
+        navigate_before
+        </span>
+    </button>
+    <button class="btn btn-outline-none my-2 my-sm-0">
+      <span class="material-icons">
+        navigate_next
+        </span>
+    </button>
+  </div>
+  <div class="buttons">
+      <button class="button button-custom text-custom border-custom rounded py-1 px-32px mr-3">Mark as read</button>
+      <button class="button bg-custom text-white border-custom rounded py-1 px-32px">Reply</button>
+  </div>
+</div>

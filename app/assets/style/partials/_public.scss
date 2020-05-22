@@ -16,12 +16,30 @@
     padding: 32px 17px;
 }
 
-
-.notesList__item{
+.notesList{
+    padding-bottom: 32px;
+}
+.notesList__items{
     p{
         font-size: 0.75rem;
     }
 }
 .notesList__items__item--active{
     background-color:  $custom-lighter;
+}
+
+.comments__header{
+    p{
+        font-size: 0.75rem;
+    }
+}
+.message{
+    margin-left: 56px;
+    p{
+        font-size: 0.87rem;
+    }
+}
+.footer{
+    left: 0;
+    bottom: 32px;
 }
