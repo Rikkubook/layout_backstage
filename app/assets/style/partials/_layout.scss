@@ -1,0 +1,31 @@
+/* layout  外框*/
+
+.headerMenu {
+    background-color: $custom-lighter;
+  }
+.headerMenu-list {
+    li{
+        position: relative;
+    }
+    a{
+        &.headerMenu-list--active{
+            color: $custom !important;
+            &:before{
+                content:"";
+                display: block;
+                position: absolute;
+                width: 4px;
+                height: 100%;
+                background-color: $custom;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        &:hover{
+            background-color: $custom-decorate;
+        }
+    }
+}
+
+

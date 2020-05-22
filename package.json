@@ -19,6 +19,7 @@
     "@babel/preset-env": "^7.9.6",
     "autoprefixer": "^9.6.0",
     "boostrap": "^2.0.0",
+    "bootstrap": "^4.5.0",
     "browser-sync": "^2.26.7",
     "ejs": "^3.1.2",
     "express": "^4.17.1",
@@ -36,8 +37,10 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "jquery": "^3.5.1",
+    "material-design-icons": "^3.0.1",
     "minimist": "^1.2.0",
     "morgan": "^1.9.1",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "popper.js": "^1.16.1"
   }
 }

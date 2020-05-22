@@ -1,0 +1,29 @@
+/*base 基本共用*/
+// * {
+//     outline: 1px solid red;
+// }
+
+//===========額外添加補充==============
+img{
+max-width: 100%;
+height: auto ;
+vertical-align: bottom;
+}
+
+//不要互動效果外框
+button:focus,button:active,a:focus,a:active{
+    outline: none !important;
+}
+
+//===========共用元件==============
+.logo a {
+    background-image: url(../images/logo-ANSWER.svg);
+    display: block;
+    width: 200px;
+    height: 50px;
+    text-indent: 102%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-size: cover;
+}
+
