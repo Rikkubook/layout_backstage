@@ -213,7 +213,6 @@
                     <li>change the<span class="bg-custom-lighter text-custom px-1">display</span> so it isn’t inline.
                     </li>
                   </ul>
-
               </div>
             </li>
           </ul>
@@ -237,9 +236,68 @@
   </div>
   <div class="buttons">
       <button class="button button-custom text-custom border-custom rounded py-1 px-32px mr-3">Mark as read</button>
-      <button class="button bg-custom text-white border-custom rounded py-1 px-32px">Reply</button>
+      <button class="button bg-custom text-white border-custom rounded py-1 px-32px" onclick="Reply()">Reply</button>
+  </div>
+
+  <div class="reply col-8  position-absolute" >
+    <div class="w-100">
+      <div class="reply__header  p-3  border  rounded-top border-custom-decorate bg-custom-lighter d-flex"> 
+        <div class="dropdown">
+          <button class="btn btn-custom-lighter dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Body Text
+          </button>
+        </div>
+        <div class="buttons">
+          <button class="btn btn-outline-none">
+            <span class="material-icons">
+              format_bold
+              </span>
+          </button>
+          <button class="btn btn-outline-none">
+            <span class="material-icons">
+              format_italic
+              </span>
+          </button>
+          <button class="btn btn-outline-none">
+            <span class="material-icons">
+              format_list_bulleted
+              </span>
+          </button>
+          <button class="btn btn-outline-none">
+            <span class="material-icons">
+              format_list_numbered
+              </span>
+          </button>
+          <button class="btn btn-outline-none">
+            <span class="material-icons">
+              insert_photo
+              </span>
+          </button>
+          <button class="btn btn-outline-none">
+            <span class="material-icons">
+              insert_link
+              </span>
+          </button>
+          <button class="btn btn-outline-none">
+            <span class="material-icons">
+              code
+              </span>
+          </button>
+        </div>
+      </div>
+      <div class="reply__textarea border rounded-bottom border-top-0 border-custom-decorate bg-white">
+        <div class="form-group">
+          <textarea class="form-control border-0" id="exampleFormControlTextarea1" rows="10" placeholder="Reply an answer…" style="resize:none;"></textarea>
+          <div class="buttons text-right px-4">
+            <button class="button button-custom text-custom border-custom rounded py-1 px-32px mr-3" onclick="Cancel()">Cancel</button>
+            <button class="button bg-custom text-white border-custom rounded py-1 px-32px">Reply</button>
+        </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
 
     </div>
 </div>
@@ -247,5 +305,14 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script>
+
+function Reply(){
+  $(".reply").addClass("replay--active");
+};
+function Cancel(){
+  $(".reply").removeClass("replay--active");
+};
+</script>
 </body>
 </html>

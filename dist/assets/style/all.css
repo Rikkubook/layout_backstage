@@ -8532,6 +8532,9 @@ a.text-custom-decorate:hover, a.text-custom-decorate:focus {
   font-size: 48px; }
 
 /*base 基本共用*/
+* {
+  outline: 1px solid red; }
+
 img {
   max-width: 100%;
   height: auto;
@@ -8613,5 +8616,17 @@ button:focus, button:active, a:focus, a:active {
 .footer {
   left: 0;
   bottom: 32px; }
+
+.reply {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  height: 0px !important;
+  max-width: 0px !important; }
+
+.replay--active {
+  height: auto !important;
+  max-width: 66.66667% !important; }
 
 /*# sourceMappingURL=all.css.map */
