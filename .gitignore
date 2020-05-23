@@ -1,7 +1,6 @@
 public
 node_modules
 .publish
-# dist
 app
 .vscode
 .DS_Store
